@@ -16,7 +16,7 @@
 body {
     background-color: #ecf2f8;
 
-    /* text properties */
+    /* Font properties */
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -33,6 +33,7 @@ body {
 /* CARD */
 
 .card {
+    margin: 24px 0;
     width: 730px;
     display: grid;
     grid-template-columns: 285px 1fr;
@@ -75,8 +76,6 @@ body {
     margin-bottom: 20px;
 }
 
-/*  */
-
 .card__box {
     display: flex;
     align-items: center;
@@ -88,8 +87,6 @@ body {
     border-radius: 50%;
     margin-right: 16px;
 }
-
-/*  */
 
 .card__name {
     font-weight: 700;
@@ -106,8 +103,6 @@ body {
     letter-spacing: 0.121875px;
     color: #9daec2;
 }
-
-/*  */
 
 .card__btn {
     width: 32px;
@@ -135,8 +130,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/*  */
-
 .card__share__box {
     width: 248px;
     height: 55px;
@@ -153,24 +146,21 @@ body {
     display: flex;
     align-items: center;
 
+    transition: opacity 0.2s;
+
     /* active */
     opacity: 1;
     pointer-events: revert;
     visibility: visible;
-
-    transition: opacity 0.2s;
 }
-
-/*  */
 
 .card__share__box--disable {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    display: none;
     transition: opacity 0.2s;
 }
-
-/*  */
 
 .card__share__pattern {
     width: 24px;
@@ -183,8 +173,6 @@ body {
     background-color: #48556a;
     transform: rotate(45deg);
 }
-
-/*  */
 
 .card__share__text {
     font-family: "Manrope";
@@ -199,6 +187,74 @@ body {
 
 .card__share__icon {
     margin-right: 16px;
+}
+
+/* MEDIA QUERIES */
+
+/* 752/16=47 */
+@media only screen and (max-width: 47em) {
+    .card {
+        width: 327px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 312px;
+    }
+
+    .card__img {
+        height: 200px;
+        grid-row: 1 / 2;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: revert;
+    }
+
+    .card__col-right {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 36px 32px 20px 32px;
+    }
+
+    .card__h2 {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+    .card__text {
+        margin-bottom: 32px;
+    }
+
+    .card__btn:active {
+        transform: revert;
+    }
+
+    .card__share__pattern {
+        width: 32px;
+        height: 32px;
+        transform: revert;
+        background-color: #6e8098;
+        border-radius: 50%;
+        top: revert;
+        bottom: 16px;
+        left: revert;
+        right: 32px;
+    }
+
+    .card__btn__icon--mobile-active {
+        z-index: 1;
+        margin-top: 8px;
+    }
+
+    .card__share__box {
+        width: 327px;
+        height: 64px;
+        left: -263px;
+        top: -8px;
+        transform: revert;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
 }
 
 /* END */
