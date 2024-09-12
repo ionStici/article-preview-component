@@ -1,260 +1,260 @@
 /* CSS RESET */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* GENERAL STYLES */
 
 body {
-    background-color: #ecf2f8;
-
-    /* Font properties */
-    font-family: "Manrope", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ecf2f8;
 }
 
 /* Center the Card */
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 16px 0 16px;
 }
 
 /* CARD */
 
 .card {
-    margin: 24px 0;
-    width: 730px;
-    display: grid;
-    grid-template-columns: 285px 1fr;
+  margin: 24px 0;
+  width: 730px;
+  display: grid;
+  grid-template-columns: 285px 1fr;
 
-    background-color: #fff;
-    box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5034);
-    border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5034);
+  border-radius: 10px;
 }
 
 .card__img {
-    width: 100%;
-    height: 280px;
-    grid-column: 1 / 2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  grid-column: 1 / 2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .card__col-right {
-    grid-column: 2 / 3;
-    padding: 32px 40px;
+  grid-column: 2 / 3;
+  padding: 32px 40px;
 }
 
 /*  */
 
 .card__h2 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0.25px;
-    color: #48556a;
-    margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #48556a;
+  margin-bottom: 12px;
 }
 
 .card__text {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.121875px;
-    color: #6e8098;
-    margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.121875px;
+  color: #6e8098;
+  margin-bottom: 20px;
 }
 
 .card__box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .card__picture {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
 }
 
 .card__name {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: 0.121875px;
-    color: #48556a;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.121875px;
+  color: #48556a;
 }
 
 .card__date {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: 0.121875px;
-    color: #9daec2;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.121875px;
+  color: #9daec2;
 }
 
 .card__btn {
-    width: 32px;
-    height: 32px;
-    border: none;
-    border-radius: 50%;
-    background-color: #ecf2f8;
-    position: relative;
-    margin-left: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .card__btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .card__btn__icon {
-    width: 15px;
-    height: 13px;
+  width: 15px;
+  height: 13px;
 
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card__share__box {
-    width: 248px;
-    height: 55px;
-    background-color: #48556a;
-    box-shadow: 0 10px 10px rgba(201, 213, 225, 0.5034);
-    border-radius: 10px;
+  width: 248px;
+  height: 55px;
+  background-color: #48556a;
+  box-shadow: 0 10px 10px rgba(201, 213, 225, 0.5034);
+  border-radius: 10px;
 
-    position: absolute;
-    left: 12%;
-    transform: translateX(-50%);
-    top: -88px;
+  position: absolute;
+  left: 12%;
+  transform: translateX(-50%);
+  top: -88px;
 
-    padding: 18px 36px 17px 37px;
-    display: flex;
-    align-items: center;
+  padding: 18px 36px 17px 37px;
+  display: flex;
+  align-items: center;
 
-    transition: opacity 0.2s;
+  transition: opacity 0.2s;
 
-    /* active */
-    opacity: 1;
-    pointer-events: revert;
-    visibility: visible;
+  /* active */
+  opacity: 1;
+  pointer-events: revert;
+  visibility: visible;
 }
 
 .card__share__box--disable {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    display: none;
-    transition: opacity 0.2s;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  display: none;
+  transition: opacity 0.2s;
 }
 
 .card__share__pattern {
-    width: 24px;
-    height: 24px;
-    position: absolute;
+  width: 24px;
+  height: 24px;
+  position: absolute;
 
-    left: 50%;
-    transform: translateX(-50%);
-    top: 43px;
-    background-color: #48556a;
-    transform: rotate(45deg);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 43px;
+  background-color: #48556a;
+  transform: rotate(45deg);
 }
 
 .card__share__text {
-    font-family: "Manrope";
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    letter-spacing: 5px;
-    color: #9daec2;
-    text-transform: uppercase;
-    margin-right: 21px;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #9daec2;
+  text-transform: uppercase;
+  margin-right: 21px;
 }
 
 .card__share__icon {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 /* MEDIA QUERIES */
 
 /* 752/16=47 */
 @media only screen and (max-width: 47em) {
-    .card {
-        width: 327px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 312px;
-    }
+  .card {
+    width: 327px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+  }
 
-    .card__img {
-        height: 200px;
-        grid-row: 1 / 2;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: revert;
-    }
+  .card__img {
+    height: 200px;
+    grid-row: 1 / 2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: revert;
+  }
 
-    .card__col-right {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        padding: 36px 32px 20px 32px;
-    }
+  .card__col-right {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 36px 32px 20px 32px;
+  }
 
-    .card__h2 {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-    }
+  .card__h2 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
 
-    .card__text {
-        margin-bottom: 32px;
-    }
+  .card__text {
+    margin-bottom: 32px;
+  }
 
-    .card__btn:active {
-        transform: revert;
-    }
+  .card__btn:active {
+    transform: revert;
+  }
 
-    .card__share__pattern {
-        width: 32px;
-        height: 32px;
-        transform: revert;
-        background-color: #6e8098;
-        border-radius: 50%;
-        top: revert;
-        bottom: 16px;
-        left: revert;
-        right: 32px;
-    }
+  .card__share__pattern {
+    width: 32px;
+    height: 32px;
+    transform: revert;
+    background-color: #6e8098;
+    border-radius: 50%;
+    top: revert;
+    bottom: 16px;
+    left: revert;
+    right: 32px;
+  }
 
-    .card__btn__icon--mobile-active {
-        z-index: 1;
-        margin-top: 8px;
-    }
+  .card__btn__icon--mobile-active {
+    z-index: 1;
+    margin-top: 8px;
+  }
 
-    .card__share__box {
-        width: 327px;
-        height: 64px;
-        left: -263px;
-        top: -8px;
-        transform: revert;
-        box-shadow: none;
-        border-radius: 0;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
+  .card__share__box {
+    width: 327px;
+    height: 64px;
+    left: -263px;
+    top: -8px;
+    transform: revert;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 /* END */
